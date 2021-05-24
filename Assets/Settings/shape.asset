@@ -1,0 +1,79 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0889833f57cf7574199b7f26ec6d9527, type: 3}
+  m_Name: shape
+  m_EditorClassIdentifier: 
+  planetRadius: 5.5
+  noiseLayers:
+  - enabled: 1
+    useFirstLayerAsMask: 0
+    noiseSettings:
+      filterType: 0
+      simpleNoiseSettings:
+        strength: 0.03
+        numLayers: 8
+        baseRoughness: 0.76
+        roughness: 1.83
+        persistence: 0.5
+        centre: {x: 0, y: 0, z: 0}
+        minValue: 1
+      ridgidNoiseSettings:
+        strength: 1
+        numLayers: 1
+        baseRoughness: 1
+        roughness: 2
+        persistence: 0.5
+        centre: {x: 0, y: 0, z: 0}
+        minValue: 0
+        weightMultiplier: 0.8
+  - enabled: 1
+    useFirstLayerAsMask: 1
+    noiseSettings:
+      filterType: 0
+      simpleNoiseSettings:
+        strength: 1.84
+        numLayers: 5
+        baseRoughness: 7.58
+        roughness: 2.11
+        persistence: 0.62
+        centre: {x: 0, y: 0, z: 0}
+        minValue: 0.01
+      ridgidNoiseSettings:
+        strength: 1.24
+        numLayers: 5
+        baseRoughness: 2.2
+        roughness: 1.44
+        persistence: 0.5
+        centre: {x: 0, y: 0, z: 0}
+        minValue: 0
+        weightMultiplier: 0.8
+  - enabled: 1
+    useFirstLayerAsMask: 1
+    noiseSettings:
+      filterType: 1
+      simpleNoiseSettings:
+        strength: 1
+        numLayers: 1
+        baseRoughness: 1
+        roughness: 2
+        persistence: 0.5
+        centre: {x: 0, y: 0, z: 0}
+        minValue: 0
+      ridgidNoiseSettings:
+        strength: 2.49
+        numLayers: 5
+        baseRoughness: 2.19
+        roughness: 2.5
+        persistence: 0.64
+        centre: {x: 0.8, y: 0, z: 0}
+        minValue: 1
+        weightMultiplier: 1
